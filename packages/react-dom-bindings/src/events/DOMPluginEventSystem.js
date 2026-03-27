@@ -436,6 +436,7 @@ export function listenToAllSupportedEvents(rootContainerElement) {
         listenToNativeEvent('selectionchange', false, ownerDocument);
       }
     }
+    console.log('allNativeEvents: ', Array.from(allNativeEvents).join(' '))
   }
 }
 

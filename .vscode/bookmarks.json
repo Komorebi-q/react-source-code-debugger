@@ -1,0 +1,49 @@
+{
+	"files": [
+		{
+			"path": "packages/react-dom/src/client/ReactDOMRoot.js",
+			"bookmarks": [
+				{
+					"line": 77,
+					"column": 14,
+					"label": "Root start render"
+				},
+				{
+					"line": 113,
+					"column": 26,
+					"label": "createRoot-1"
+				}
+			]
+		},
+		{
+			"path": "packages/react-reconciler/src/ReactFiberReconciler.js",
+			"bookmarks": [
+				{
+					"line": 217,
+					"column": 26,
+					"label": "createRoot-2"
+				}
+			]
+		},
+		{
+			"path": "packages/react-reconciler/src/ReactFiberRoot.js",
+			"bookmarks": [
+				{
+					"line": 35,
+					"column": 10,
+					"label": "FiberRootNode"
+				},
+				{
+					"line": 178,
+					"column": 24,
+					"label": "createRoot-3"
+				},
+				{
+					"line": 198,
+					"column": 34,
+					"label": "create Fiber Tree Root Node"
+				}
+			]
+		}
+	]
+}

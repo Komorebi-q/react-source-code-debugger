@@ -4,16 +4,4 @@
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
   ],
-  "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "react": ["./packages/react"],
-      "react-dom": ["./packages/react-dom"],
-      "scheduler": ["./packages/scheduler"],
-      "shared": ["./packages/shared"],
-      "react-dom-bindings": ["./packages/react-dom-bindings"],
-      "react-reconciler": ["./packages/react-reconciler"],
-      "react-client": ["./packages/react-client"],
-    }
-  }
 }

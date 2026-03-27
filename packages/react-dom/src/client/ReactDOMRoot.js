@@ -196,6 +196,20 @@ export function createRoot(
     !disableCommentsAsDOMContainers && container.nodeType === COMMENT_NODE
       ? (container.parentNode)
       : container;
+  
+  // allNativeEvents 分类:
+  // 鼠标事件: click dblclick mousedown mouseup mousemove mouseover mouseout contextmenu auxclick
+  // textInput 是键盘输入相关的事件，当输入法输入字符并插入到输入框时触发。
+  // 例如：在 input 或 textarea 中使用中文输入法输入并确认文字时，会触发 textInput 事件。
+  // 焦点事件: focusin focusout
+  // 剪贴板事件: copy cut paste
+  // 拖放事件: drag dragend dragenter dragexit dragleave dragover dragstart drop
+  // 输入和表单事件: input change invalid reset submit compositionstart compositionupdate compositionend
+  // 触摸和指针事件: touchstart touchmove touchend touchcancel pointerdown pointermove pointerup pointercancel pointerover pointerout gotpointercapture lostpointercapture
+  // 过渡和动画事件: transitionrun transitionstart transitionend transitioncancel animationstart animationiteration animationend
+  // 媒体/视频事件: canplay canplaythrough durationchange emptied encrypted ended error loadeddata loadedmetadata loadstart pause play playing progress ratechange seeked seeking stalled suspend timeupdate volumechange waiting
+  // 其它 DOM/UI 事件: abort beforetoggle cancel close fullscreenchange fullscreenerror load resize scroll scrollend toggle
+  // 选择事件: selectionchange
   listenToAllSupportedEvents(rootContainerElement);
 
   // $FlowFixMe[invalid-constructor] Flow no longer supports calling new on functions

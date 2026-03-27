@@ -15,6 +15,8 @@
     "moduleDetection": "force",
     "noEmit": true,
     "jsx": "react-jsx",
+    "allowJs": true,
+    "checkJs": false,
 
     /* Linting */
     "strict": true,
@@ -22,7 +24,23 @@
     "noUnusedParameters": true,
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "noUncheckedSideEffectImports": true,
+
+    "baseUrl": "./",
+    "paths": {
+      "react": ["./packages/react"],
+      "react-dom": ["./packages/react-dom"],
+      "scheduler": ["./packages/scheduler"],
+      "shared": ["./packages/shared"],
+      "react-dom-bindings": ["./packages/react-dom-bindings"],
+      "react-reconciler": ["./packages/react-reconciler"],
+      "react-client": ["./packages/react-client"],
+      "react-dom/*": ["packages/react-dom/*"],
+      "react-scheduler/*": ["packages/scheduler/*"],
+      "react-client/*": ["packages/react-client/*"],
+      "react-dom-bindings/*": ["packages/react-dom-bindings/*"],
+      "react-reconciler/*": ["packages/react-reconciler/*"],
+    }
   },
-  "include": ["src"]
+  "include": ["src", "packages"]
 }
